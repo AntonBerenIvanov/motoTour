@@ -2,12 +2,23 @@
 @import "fonts"
 @import "libs"
 
+
+/* --- All page --- */
+
+.logo, .footer-logo
+    height: 50px
+    img
+        height: 100%
+        width: 100%
+
 /* --- Home page --- */
 
 /* navbar */
 
 .navbar-area.nav-style-01
     background-color: rgba(36,36,36,0.5)
+
+
 
 /* customer */
 
@@ -19,7 +30,7 @@
 .tour-area
     margin-bottom: 0
 
-/* --- Tour page --- */
+/* --- All Tour page --- */
 
 .breadcrumb-slider
     height: 400px
@@ -30,6 +41,45 @@
         
 .breadcrumb-style-3
     min-height: 400px
+
+/* --- Single Tour Page ---*/
+
+.breadcrumb-style-01
+    min-height: 400px
+    p
+        color: var(--paragraph-color)
+        padding: 0 60px
+.fun-facts .fun-content .fun-text p
+    line-height: 18px
+.explore-area .explore_right h1
+    line-height: 60px
+
+.search-popup
+    .form-area.search-form
+        padding-top: 450px
+        position: fixed
+        border-radius: 4px
+        h4
+            text-align: center
+            padding-top: 20px
+            font-size: 32px
+        .form-field
+            width: 90%
+            // padding-left: 5%
+            margin: 30px auto
+        .btn.btn-element
+            margin: 0 auto
+            
+        // position: fixed
+        // z-index: 100
+        // // background-color: #fff
+        // top: 50%
+        // left: 50%
+        // .form-group.search-form
+        //     background-color: #fff
+        //     height: 100%
+        //     .search-form
+        //         position: fixed
 
 
 @import "media" // Always at the end
