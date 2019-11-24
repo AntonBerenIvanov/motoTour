@@ -394,30 +394,30 @@
             speed: 1500
         });
 
-        //have to write code for bind it with static images
-        quoteSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            var liIndex = nextSlide + 1;
-            var slideImageliIndex = (slick.slideCount == liIndex) ? liIndex - 1 : liIndex;
-            var cart = $('.quote-slider .slick-slide[data-slick-index="' + slideImageliIndex + '"]').find('.image');
-            var imgtodrag = $('.quote-image-menu li:nth-child(' + liIndex + ')').find("img").eq(0);
-            if (imgtodrag) {
-                AnimateTestimonialImage(imgtodrag, cart)
-            }
-        });
+        // //have to write code for bind it with static images
+        // quoteSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        //     var liIndex = nextSlide + 1;
+        //     var slideImageliIndex = (slick.slideCount == liIndex) ? liIndex - 1 : liIndex;
+        //     var cart = $('.quote-slider .slick-slide[data-slick-index="' + slideImageliIndex + '"]').find('.image');
+        //     var imgtodrag = $('.quote-image-menu li:nth-child(' + liIndex + ')').find("img").eq(0);
+        //     if (imgtodrag) {
+        //         AnimateTestimonialImage(imgtodrag, cart)
+        //     }
+        // });
 
-        //have to write code for bind static image to slider accordion to slide index of images
+        // //have to write code for bind static image to slider accordion to slide index of images
 
-        $(document).on('click', '.quote-image-menu li', function (e) {
-            var el = $(this);
-            var elIndex = el.prevAll().length;
-            quoteSlider.slick('slickGoTo', elIndex);
-            var cart = $('.quote-slider .slick-slide[data-slick-index="' + elIndex + '"]').find('.image');
-            var imgtodrag = el.find("img").eq(0);
-            if (imgtodrag) {
-                AnimateTestimonialImage(imgtodrag, cart)
-            }
+        // $(document).on('click', '.quote-image-menu li', function (e) {
+        //     var el = $(this);
+        //     var elIndex = el.prevAll().length;
+        //     quoteSlider.slick('slickGoTo', elIndex);
+        //     var cart = $('.quote-slider .slick-slide[data-slick-index="' + elIndex + '"]').find('.image');
+        //     var imgtodrag = el.find("img").eq(0);
+        //     if (imgtodrag) {
+        //         AnimateTestimonialImage(imgtodrag, cart)
+        //     }
 
-        });
+        // });
 
         function AnimateTestimonialImage(imgtodrag, cart) {
             var imgclone = imgtodrag.clone().offset({
