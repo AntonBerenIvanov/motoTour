@@ -72,8 +72,24 @@
 
 /* --- Blog Page --- */
 
-.blog-content .blog-left-content .img-item
-    flex-direction: column          
+.blog-content
+    .blog-left-content
+        >.row
+            justify-content: space-between
+            margin-left: 0
+            margin-right: 0
+        .img-item
+            // flex-direction: column
+            width: 50%
+        .slider-item
+            width: 100%
+            flex-grow: 1
+            // margin-left: 0
+            // margin-right: 0
+
+
+    // max-width: 50%
+    // flex-wrap: wrap      
         // position: fixed
         // z-index: 100
         // // background-color: #fff
