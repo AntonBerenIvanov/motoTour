@@ -3,6 +3,7 @@
 
     $(document).ready(function () {
 
+        
          /**-----------------------------
          *  Popup
          * ---------------------------*/
@@ -858,3 +859,10 @@
 
 
 })(jQuery);
+
+(function($) {
+    $('[data-fancybox="gallery"]').fancybox({
+        // Options will go here
+    });
+
+      })(jQuery_3_2_1);
