@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="css/main.min.css">
      <!-- responsive Stylesheet -->
      <link rel="stylesheet" href="css/responsive.css">
+     <!-- 2gid script -->
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 
 </head>
 <body>
@@ -87,7 +89,7 @@
                     <li><a href="blog.html">Туры</a></li>
                     <li><a href="trails.html">Галерея</a></li>
                     <li><a href="blog-2.html">Блог</a></li>
-                    <li><a href="about.html">Отзывы</a></li>              
+                    <!-- <li><a href="about.html">Отзывы</a></li>               -->
                     <li><a href="contact.html">Контакты</a></li>
                 </ul>
             </div>
@@ -99,11 +101,14 @@
     <!-- breadcrumb area -->
     <div class="breadcrumb-area breadcrumb-style-6">
         <div class="breadcrumb-inner">
-            <h1 class="page-title">Contact us</h1>
-            <ul class="page-list">
+            <h1 class="page-title">Свяжитесь с нами</h1>
+            <p>
+               Любым удобным для Вас способом 
+            </p>
+            <!-- <ul class="page-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html#">Contact</a></li>
-            </ul>
+            </ul> -->
         </div>
     </div>
     <!-- breadcrumb area end -->
@@ -117,19 +122,26 @@
                         <span class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet semper augue.</span>
                         <span class="contact-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet semper augue.</span>
                         <div class="info margin-top-50">
-                            <h3>Address</h3>
-                            <span>Iris Watson<br> P.O. Box 283 8562 Fusce Rd. Frederick Nebraska 20620<br>(372) 587-2335</span>
+                            <h3>Адрес</h3>
+                            <span>Бишкек<br>​Касыма Тыныстанова, 122<br>+996 (312) 66‒20‒32</span>
                         </div>
                         <div class="info margin-top-50">
                             <h3>Online Service</h3>
-                            <a href="contact.html#">www.billatrail.com</a><br>
-                            <a href="contact.html#">info@billatrail.com</a><br>
-                            <a href="contact.html#">fax.info@mail.com</a><br>
+                            <a href="contact.html#">e-mail: mail@mail.kg</a><br>
+                            <a href="contact.html#">skype: moto-tour</a><br>
+                            <a href="contact.html#">whatsapp: +996 (312) 66‒20‒32</a><br>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="contact-right margin-top-120">
+                    <div class="mapouter">
+                        <div id="map"></div>
+                        <!-- <div class="gmap_canvas">
+                            <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">elementor review</a>
+                        </div> -->
+                    </div>
+                    <!-- <div class="contact-right margin-top-120">
                         <div class="contact-title">
                             Send Us a Message
                         </div>
@@ -152,7 +164,7 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -301,6 +313,7 @@
     <!-- main js -->
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
 
 </body>
 </html>
