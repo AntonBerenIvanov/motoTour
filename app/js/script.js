@@ -864,7 +864,7 @@
 
 (function($) {
 
-    $('[data-fancybox="gallery"]').fancybox({
+    $('[data-fancybox="images"]').fancybox({
         buttons : [ 
             'zoom',
             'slideShow',
